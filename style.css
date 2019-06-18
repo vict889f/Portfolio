@@ -654,6 +654,17 @@ video {
 
     }
 
+    .link2 {
+        width: 250px;
+        height: 35px;
+        background-color: #1E443F;
+        text-align: center;
+        margin: 35px 40px 100px;
+
+    }
+
+
+
     /******************* UX *********************/
 
     .left_4 {
