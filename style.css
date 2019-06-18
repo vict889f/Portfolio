@@ -1,0 +1,669 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {}
+
+body {
+    margin: 0;
+    background-color: white;
+
+}
+
+
+img {
+    width: 100%;
+}
+
+
+h1 {
+    color: black;
+    font-size: 40px;
+    font-family: quicksand, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h2 {
+    color: black;
+    font-size: 30px;
+    font-family: quicksand, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+}
+
+p {
+    color: black;
+    font-size: 15px;
+    font-family: quicksand, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+ul {
+    color: black;
+    font-size: 15px;
+    font-family: quicksand, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    list-style-position: inside;
+
+}
+
+a {
+    color: #3D8A7F;
+    text-decoration: none;
+    color: #3D8A7F;
+    font-family: quicksand, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    /*    margin-left: 68px;*/
+    align-items: center;
+
+}
+
+/*NAV */
+
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 60px;
+    width: 100%;
+
+    background-color: #1E443F;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #3D8A7F;
+    font-family: quicksand, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    /*    margin-left: 68px;*/
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+a:hover {
+    color: white;
+    cursor: pointer;
+}
+
+/*
+button {
+    text-decoration: none;
+    color: #3D8A7F;
+    font-family: quicksand, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    margin-left: 68px;
+    align-items: center;
+}
+
+button:hover {
+    cursor: pointer;
+    color: white;
+}
+*/
+
+#menu a.active {
+    color: white;
+
+}
+
+/*BURGER MENU*/
+
+
+#menu {
+    transition: transform .3s;
+    transform-origin: top;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: #1B2326;
+    width: 100%;
+    z-index: 40;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#menuknap {
+    display: inline-block;
+    z-index: 100;
+    right: 10vw;
+    position: fixed;
+    color: #3D8A7F;
+    cursor: pointer;
+
+
+    font-family: quicksand, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+
+    width: 40px;
+    height: 40px;
+    text-align: center;
+
+}
+
+#menuknap:hover {
+    color: white;
+}
+
+
+.hidden {
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+
+
+
+/*BOTTOM BAR*/
+#social {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #1E443F;
+    justify-content: center;
+    height: 70px;
+    align-items: center;
+
+}
+
+.face figure {
+    margin-left: 20px;
+    padding: 20px;
+    height: 60px;
+    width: 50px;
+}
+
+.insta figure {
+    padding: 20px;
+    height: 60px;
+    width: 60px;
+}
+
+
+
+/*FORSIDE IMG*/
+
+#splash {
+    display: flex;
+    justify-content: center;
+    padding: 165px 10px 100px;
+    background-color: #3D8A7F;
+    height: 100vh;
+
+}
+
+#text_img {
+    height: 500px;
+    width: 500px;
+}
+
+.color {
+    background-color: #3D8A7F;
+}
+
+
+
+
+/*TOP IMG SETTINGS*/
+
+#top_img {
+    display: flex;
+    justify-content: center;
+    background-color: #3D8A7F;
+}
+
+#text_img2 {
+    width: 35vw;
+
+}
+
+
+
+/*****************CV********************/
+
+
+
+.overskrift {
+    text-align: center;
+}
+
+.om_mig {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 10px;
+    margin-bottom: 0px;
+}
+
+.image {
+    flex-grow: 1;
+    flex-basis: 300px;
+    justify-content: space-between;
+    margin: 5vw 5vw 0vw;
+}
+
+.image img {
+    height: 50vw;
+}
+
+#left {
+    flex-grow: 2;
+    flex-basis: 600px;
+    width: 10vw;
+    margin: 50px;
+    /*    padding: 0 0 50px 0;*/
+}
+
+
+/*FOLD UD BOX*/
+
+#box {
+    background-color: rgb(61, 138, 127);
+    padding: 15px 10px 40px;
+    margin: 50px 0 10px;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    z-index: 10;
+
+}
+
+#box h2 {
+    text-align: center;
+    color: white;
+}
+
+#box li {
+    color: white
+}
+
+
+#box.lille {
+    overflow: hidden;
+    max-height: 150px;
+}
+
+#box.stor {
+    max-height: 3000px;
+}
+
+#mere {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+}
+
+#mere .plus {
+    background: #1E443F;
+    width: 20px;
+    height: 20px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+
+    margin-top: 40px;
+
+}
+
+#box.lille span::after {
+    content: "+";
+}
+
+#box.stor span::after {
+    content: "-";
+}
+
+.overlay {
+    height: 60px;
+    background: linear-gradient(rgba(61, 138, 127, 0), rgb(61, 138, 127))
+}
+
+
+/*Webdesign*/
+
+.webdesign {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 10px;
+    margin-bottom: 0px;
+}
+
+.left_2 {
+    flex-basis: 600px;
+    width: 10vw;
+    margin: 50px;
+    /*    padding: 0 0 50px 0;*/
+}
+
+
+
+/*Animation*/
+
+.intro {
+    /*
+    display: flex;
+    flex-wrap: wrap;
+*/
+    justify-content: center;
+    margin: 50px 0px 0px;
+    max-width: 430px;
+
+}
+
+.left_3 {
+    flex-grow: 2;
+    flex-basis: 600px;
+    width: 10vw;
+    margin: 50px;
+}
+
+.link {
+    width: 250px;
+    height: 35px;
+    background-color: #1E443F;
+    text-align: center;
+    margin: 35px 0 50px;
+}
+
+.img {
+    margin-top: 30px
+}
+
+.img1 {
+    margin-top: 30px
+}
+
+
+/*CONTENT + Video*/
+
+
+#video-container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+video {
+    margin-top: 3rem;
+
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 10px;
+    margin-bottom: 0px;
+}
+
+.redesign {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+    margin-bottom: 0px;
+    width: 440px
+}
+
+
+.link1 {
+    width: 250px;
+    height: 35px;
+    background-color: #1E443F;
+    text-align: center;
+    margin: 35px 0 0px;
+}
+
+
+
+
+/*MEDIE KARRY*/
+
+@media screen and (min-width: 1080px) {
+
+
+    #menuknap {
+        display: none;
+    }
+
+    #menu.hidden {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    #menu li {
+        display: inline-block;
+    }
+
+    .bucholdtz {
+        z-index: 100;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    header #menu {
+        justify-content: flex-end;
+        /*        */
+        background-color: #1E443F;
+        width: 100%;
+        z-index: 40;
+        padding: 1rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px 60px;
+        width: 100%;
+        position: fixed;
+        z-index: 30;
+
+        background-color: #1E443F;
+
+    }
+
+
+    header nav a {
+        text-decoration: none;
+        color: #3D8A7F;
+        font-family: quicksand, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20px;
+        margin-left: 68px;
+        align-items: center;
+
+
+    }
+
+    #text_img2 {
+        width: 20vw;
+        padding-top: 100px;
+    }
+
+    /******************  CV ***************************/
+    .om_mig {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0 10px;
+        margin-bottom: 0px;
+    }
+
+    .image {
+        flex-grow: 1;
+        flex-basis: 300px;
+        justify-content: space-between;
+        margin: 0vw 0vw 5vw 10vw;
+    }
+
+    .image img {
+        height: 30vw;
+    }
+
+    #left {
+        flex-grow: 2;
+        flex-basis: 600px;
+        width: 100px;
+        margin: 50px;
+        /*    padding: 0 0 50px 0;*/
+    }
+
+    /*******************    Webdesign *********************/
+
+    .webdesign {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 10px;
+        margin-bottom: 0px;
+        align-items: center;
+
+    }
+
+    .left_2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50vw;
+        margin: 50px;
+    }
+
+    .webdesign .pop_splash img {
+        object-fit: cover;
+        height: 20vw;
+    }
+
+
+
+    /*******************    Animation *********************/
+
+    .intro {
+        justify-content: center;
+        margin: 50px 0px 0px;
+        max-width: 900px;
+
+    }
+
+    .left_3 {
+        flex-grow: 2;
+        flex-basis: 600px;
+        max-width: 30vw;
+        margin: 50px;
+        justify-content: center;
+    }
+
+    .img {
+        margin-top: 30px
+    }
+
+    .img1 {
+        margin-top: 52px
+    }
+
+
+    .link {
+        width: 250px;
+        height: 35px;
+        background-color: #1E443F;
+        text-align: center;
+        margin: 35px 40px 50px;
+
+    }
+
+    /******************* Content *********************/
+
+
+
+    #video-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    #video {
+        width: 650px
+    }
+
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 10px;
+        margin-bottom: 0px;
+        align-items: center;
+    }
+
+
+    .redesign {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px;
+        margin-bottom: 0px;
+        width: 30vw
+    }
+
+    .link1 {
+        width: 250px;
+        height: 35px;
+        background-color: #1E443F;
+        text-align: center;
+        margin: 35px 30px 0px;
+
+    }
+
+    /******************* UX *********************/
+
+    .left_4 {
+        flex-grow: 2;
+        flex-basis: 600px;
+        max-width: 30vw;
+        margin: 50px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+
+}
