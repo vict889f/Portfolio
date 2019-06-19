@@ -195,6 +195,18 @@ button:hover {
 
 }
 
+#social_home {
+    display: flex;
+    width: 100%;
+    background-color: #1E443F;
+    justify-content: center;
+    height: 70px;
+    align-items: center;
+    z-index: 100;
+
+}
+
+
 .face figure {
     margin-left: 20px;
     padding: 20px;
@@ -370,6 +382,10 @@ button:hover {
     margin: 50px 0 100px;
 }
 
+.webdesign_2 {
+    margin-bottom: 50px;
+}
+
 
 
 
@@ -537,6 +553,11 @@ video {
         padding-top: 100px;
     }
 
+    /****************** Home ****************************/
+
+
+
+
     /******************  CV ***************************/
     .om_mig {
         display: flex;
@@ -590,6 +611,15 @@ video {
         height: 20vw;
     }
 
+    .link1 {
+        width: 250px;
+        height: 35px;
+        background-color: #1E443F;
+        text-align: center;
+        margin: 35px 0 30px;
+    }
+
+
 
 
     /*******************    Animation *********************/
@@ -618,15 +648,6 @@ video {
     }
 
 
-    .link {
-        width: 250px;
-        height: 35px;
-        background-color: #1E443F;
-        text-align: center;
-        margin: 35px 40px 50px;
-
-    }
-
     /******************* Content *********************/
 
 
@@ -639,7 +660,7 @@ video {
     }
 
     #video {
-        width: 400px
+        width: 650px
     }
 
 
@@ -660,7 +681,7 @@ video {
         align-items: center;
         padding: 0 10px;
         margin-bottom: 0px;
-        width: 30vw
+        width: 50vw
     }
 
     .link1 {
