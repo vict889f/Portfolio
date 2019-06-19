@@ -191,6 +191,7 @@ button:hover {
     justify-content: center;
     height: 70px;
     align-items: center;
+    z-index: 100;
 
 }
 
@@ -288,7 +289,7 @@ button:hover {
 #box {
     background-color: rgb(61, 138, 127);
     padding: 15px 10px 40px;
-    margin: 50px 0 10px;
+    margin: 50px 0 50px;
     position: relative;
     width: 100%;
     justify-content: center;
@@ -357,14 +358,18 @@ button:hover {
     justify-content: center;
     padding: 0 10px;
     margin-bottom: 0px;
+    align-items: center;
 }
 
+
 .left_2 {
-    flex-basis: 600px;
-    width: 10vw;
-    margin: 50px;
-    /*    padding: 0 0 50px 0;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+    margin: 50px 0 100px;
 }
+
 
 
 
@@ -393,7 +398,7 @@ button:hover {
     height: 35px;
     background-color: #1E443F;
     text-align: center;
-    margin: 35px 0 50px;
+    margin: 0px 0 50px;
 }
 
 .img {
@@ -421,6 +426,10 @@ video {
 
 }
 
+#video {
+    width: 400px
+}
+
 .content {
     display: flex;
     flex-wrap: wrap;
@@ -445,9 +454,18 @@ video {
     height: 35px;
     background-color: #1E443F;
     text-align: center;
-    margin: 35px 0 0px;
+    margin: 35px 0 30px;
 }
 
+.link2 {
+    width: 250px;
+    height: 35px;
+    background-color: #1E443F;
+    text-align: center;
+    margin: 0px 0px 100px;
+}
+
+/*UX*/
 
 
 
@@ -596,7 +614,7 @@ video {
     }
 
     .img1 {
-        margin-top: 52px
+        margin-top: 30px
     }
 
 
@@ -621,7 +639,7 @@ video {
     }
 
     #video {
-        width: 650px
+        width: 400px
     }
 
 
